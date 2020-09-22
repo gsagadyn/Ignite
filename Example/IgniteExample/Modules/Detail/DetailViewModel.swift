@@ -9,6 +9,7 @@
 import SwiftUI
 import Ignite
 import Combine
+import Singularity
 
 internal class DetailViewModel: ViewModelLayer<DetailNavigator>, ObservableObject {
     // MARK: - Internal Properties
@@ -17,9 +18,12 @@ internal class DetailViewModel: ViewModelLayer<DetailNavigator>, ObservableObjec
     @Published var powY: Int = 0
     @Published var result: Int = 0
 
-    // MARK: - Private Properties
+    // MARK: - Private Dependency Properties
 
-    private var calculatorAssembly = CalculatorAssembly()
+    @Inject(.main) private var calculatorAssembly: CalculatorAssemblyType
+    
+    // MARK: - Private Properties
+    
     private var bag = Set<AnyCancellable>()
 
     // MARK: - Initialization

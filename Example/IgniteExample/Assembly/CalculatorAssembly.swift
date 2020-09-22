@@ -9,24 +9,23 @@
 import Foundation
 import Ignite
 import Combine
+import Singularity
 
 public protocol CalculatorAssemblyType: AssemblyLayerType {
     func pow(_ x: Int, by y: Int) -> AnyPublisher<Int, Never>
 }
 
 // -----------------------------------------------------------------------------
-// MARK: - Services
-// -----------------------------------------------------------------------------
-
-internal class CalculatorAssembly: AssemblyLayer, CalculatorAssemblyType {
-    private let multiplyService = MultiplyService()
-}
-
-// -----------------------------------------------------------------------------
 // MARK: - Implementation
 // -----------------------------------------------------------------------------
 
-extension CalculatorAssembly {
+internal class CalculatorAssembly: AssemblyLayer, CalculatorAssemblyType {
+    // MARK: - Private Dependency Properties
+
+    @Inject(.main) private var multiplyService: MultiplyServiceType
+
+    // MARK: - Protocol Implementation
+
     internal func pow(_ x: Int, by y: Int) -> AnyPublisher<Int, Never> {
         (0 ..< max(y, 0)).publisher
             .reduce(Just<Int>(1).eraseToAnyPublisher()) { publisher, _ -> AnyPublisher<Int, Never> in

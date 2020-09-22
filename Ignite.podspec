@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Ignite'
-  s.version          = '1.0.0'
-  s.summary          = 'WIP: Ignite Architecture.'
+  s.version          = '1.0.1'
+  s.summary          = 'The lightweight architecture of mobile applications'
   s.homepage         = 'https://github.com/gsagadyn/Ignite'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Grzegorz Sagadyn' => 'sagadyn@gmail.com' }

@@ -6,6 +6,9 @@ attributes:
 packages:
   Ignite:
     path: ..
+  Singularity:
+    url: https://github.com/gsagadyn/Singularity.git
+    from: 1.0.0
 targets:
   IgniteExample:
     type: application
@@ -14,3 +17,4 @@ targets:
     sources: [IgniteExample]
     dependencies:
       - package: Ignite
+      - package: Singularity
