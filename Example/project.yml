@@ -1,0 +1,16 @@
+name: IgniteExample
+options:
+  bundleIdPrefix: pl.codeforge
+attributes:
+  ORGANIZATIONNAME: "IgniteExample"
+packages:
+  Ignite:
+    path: ..
+targets:
+  IgniteExample:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [IgniteExample]
+    dependencies:
+      - package: Ignite
