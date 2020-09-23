@@ -19,7 +19,7 @@ internal class HomeViewModel: ViewModelLayer<HomeNavigator>, ObservableObject {
     // MARK: - Actions
     
     internal func showResultAction() {
-        navigator.viewController.view.endEditing(true)
+        navigator.controller.view.endEditing(true)
         navigator.presentDetailView(powX: powX, powY: powY)
     }
     

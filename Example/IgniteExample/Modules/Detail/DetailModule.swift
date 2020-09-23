@@ -29,7 +29,7 @@ internal class DetailModule: ModuleLayer<DetailView, DetailViewModel, DetailNavi
         let view = ViewLayer(viewModel: ViewModelLayer(navigator: NavigatorLayer()))
         let vc = UIHostingController(rootView: view)
         
-        view.viewModel.navigator.viewController = vc
+        view.viewModel.navigator.controller = vc
         view.viewModel.powX = powX
         view.viewModel.powY = powY
         

@@ -1,12 +1,14 @@
 //
 //  NavigatorLayerType.swift
-//
+//  Ignite
 //
 //  Created by Grzegorz Sagadyn on 20/09/2020.
 //
 
-import UIKit
+import Foundation
 
 public protocol NavigatorLayerType: class, IgniteType {
-    var viewController: UIViewController! { get set }
+    associatedtype Controller
+    
+    var controller: Controller! { get set }
 }

@@ -1,11 +1,11 @@
 //
 //  ModuleLayer.swift
-//
+//  Ignite
 //
 //  Created by Grzegorz Sagadyn on 21/09/2020.
 //
 
-import UIKit
+import Foundation
 
 open class ModuleLayer<V: ViewLayerType, M: ViewModelLayerType, N: NavigatorLayerType>: ModuleLayerType {
     // MARK: - Public Typealiases
@@ -20,5 +20,5 @@ open class ModuleLayer<V: ViewLayerType, M: ViewModelLayerType, N: NavigatorLaye
 
     // MARK: - Abstract Assemble Method
 
-    open func assemble() -> UIViewController { fatalError("Not implemented abstract method \(#function)") }
+    open func assemble() -> N.Controller { fatalError("Not implemented abstract method \(#function)") }
 }

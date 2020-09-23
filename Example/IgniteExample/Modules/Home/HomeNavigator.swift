@@ -13,6 +13,6 @@ import Ignite
 internal class HomeNavigator: NavigatorLayer {    
     internal func presentDetailView(powX: String, powY: String) {
         let vc = DetailModule(powX: powX, powY: powY).assemble()
-        viewController.navigationController?.pushViewController(vc, animated: true)
+        controller.navigationController?.pushViewController(vc, animated: true)
     }
 }

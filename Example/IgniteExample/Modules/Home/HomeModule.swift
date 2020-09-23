@@ -15,7 +15,7 @@ internal class HomeModule: ModuleLayer<HomeView, HomeViewModel, HomeNavigator> {
         let view = ViewLayer(viewModel:  ViewModelLayer(navigator: NavigatorLayer()))
         let vc = UIHostingController(rootView: view)
         
-        view.viewModel.navigator.viewController = vc
+        view.viewModel.navigator.controller = vc
         
         return vc
     }
