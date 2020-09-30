@@ -15,7 +15,7 @@ internal class ___VARIABLE_productName___Module: ModuleLayer<___VARIABLE_product
         let view = ViewLayer(viewModel: ViewModelLayer(navigator: NavigatorLayer()))
         let vc = UIHostingController(rootView: view)
         
-        view.viewModel.navigator.viewController = vc
+        view.viewModel.navigator.controller = vc
         
         return vc
     }
