@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import Ignite
 
-internal class ___VARIABLE_productName___Navigator: NavigatorLayer {
+internal final class ___VARIABLE_productName___Navigator: NavigatorLayer {
     
     // Add ___VARIABLE_productName___Navigator implementation here.
     

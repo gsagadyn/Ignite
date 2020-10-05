@@ -9,7 +9,7 @@
 import SwiftUI
 import Ignite
 
-internal class ___VARIABLE_productName___ViewModel: ViewModelLayer<___VARIABLE_productName___Navigator>, ObservableObject {
+internal final class ___VARIABLE_productName___ViewModel: ViewModelLayer<___VARIABLE_productName___Navigator>, ObservableObject {
     
     // Add ___VARIABLE_productName___ViewModel implementation here.
     
