@@ -7,14 +7,14 @@
 
 import Foundation
 
-open class ViewModelLayer<N: NavigatorLayerType>: ViewModelLayerType {
+open class ViewModelLayer<NavigatorLayer: NavigatorLayerType>: ViewModelLayerType {
     // MARK: - Open Properties
 
-    open var navigator: N
+    open var navigator: NavigatorLayer
 
     // MARK: - Initialization
 
-    public init(navigator: N) {
+    public init(navigator: NavigatorLayer) {
         self.navigator = navigator
     }
 }

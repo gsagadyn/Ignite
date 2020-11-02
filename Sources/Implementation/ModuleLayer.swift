@@ -7,12 +7,10 @@
 
 import Foundation
 
-open class ModuleLayer<V: ViewLayerType, M: ViewModelLayerType, N: NavigatorLayerType>: ModuleLayerType {
+open class ModuleLayer<ViewLayer: ViewLayerType>: ModuleLayerType {
     // MARK: - Public Typealiases
 
-    public typealias ViewLayer = V
-    public typealias ViewModelLayer = M
-    public typealias NavigatorLayer = N
+    public typealias ViewLayer = ViewLayer
 
     // MARK: - Initialization
 
@@ -20,5 +18,5 @@ open class ModuleLayer<V: ViewLayerType, M: ViewModelLayerType, N: NavigatorLaye
 
     // MARK: - Abstract Assemble Method
 
-    open func assemble() -> N.Controller { fatalError("Not implemented abstract method \(#function)") }
+    open func assemble() -> ViewLayer.ViewModelLayer.NavigatorLayer.Controller { fatalError("Not implemented method \(#function)") }
 }

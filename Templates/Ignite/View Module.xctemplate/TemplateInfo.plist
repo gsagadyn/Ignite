@@ -11,7 +11,7 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>DefaultCompletionName</key>
-	<string>MyClass</string>
+	<string>MyModule</string>
 	<key>AllowedTypes</key>
 	<array>
 		<string>public.swift-source</string>
@@ -33,6 +33,20 @@
 			<string>The name of the Ignite module</string>
 			<key>Type</key>
 			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>IncludePreviews</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Include previews</string>
+			<key>Description</key>
+			<string>Indicates whether previews should be included</string>
+			<key>Type</key>
+			<string>checkbox</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>

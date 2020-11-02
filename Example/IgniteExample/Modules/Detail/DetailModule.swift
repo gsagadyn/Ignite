@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import Ignite
 
-internal class DetailModule: ModuleLayer<DetailView, DetailViewModel, DetailNavigator> {
+internal class DetailModule: ModuleLayer<DetailView> {
     // MARK: - Private Properties
     
     private var powX: Int
@@ -26,7 +26,9 @@ internal class DetailModule: ModuleLayer<DetailView, DetailViewModel, DetailNavi
     // MARK: - Assemble
     
     internal override func assemble() -> UIViewController {
-        let view = ViewLayer(viewModel: ViewModelLayer(navigator: NavigatorLayer()))
+        let navigator = ViewLayer.ViewModelLayer.NavigatorLayer()
+        let viewModel = ViewLayer.ViewModelLayer(navigator: navigator)
+        let view = ViewLayer(viewModel: viewModel)
         let vc = UIHostingController(rootView: view)
         
         view.viewModel.navigator.controller = vc

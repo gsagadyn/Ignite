@@ -10,9 +10,11 @@ import UIKit
 import SwiftUI
 import Ignite
 
-internal final class ___VARIABLE_productName___Module: ModuleLayer<___VARIABLE_productName___View<___VARIABLE_productName___ViewModel>, ___VARIABLE_productName___ViewModel, ___VARIABLE_productName___Navigator> {
+internal final class ___VARIABLE_productName___Module: ModuleLayer<___VARIABLE_productName___View> {
     internal override func assemble() -> UIViewController {
-        let view = ViewLayer(viewModel: ViewModelLayer(navigator: NavigatorLayer()))
+        let navigator = ViewLayer.ViewModelLayer.NavigatorLayer()
+        let viewModel = ViewLayer.ViewModelLayer(navigator: navigator)
+        let view = ViewLayer(viewModel: viewModel)
         let vc = UIHostingController(rootView: view)
         
         view.viewModel.navigator.controller = vc

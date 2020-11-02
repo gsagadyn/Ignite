@@ -9,7 +9,7 @@
 import SwiftUI
 import Ignite
 
-internal protocol ___VARIABLE_productName___ViewModelType: ViewModelLayer<___VARIABLE_productName___Navigator>, ObservableObject {
+internal protocol ___VARIABLE_productName___ViewModelType: ViewModelLayerType, ObservableObject {
     // Define ___VARIABLE_productName___ViewModelType here.
 }
 

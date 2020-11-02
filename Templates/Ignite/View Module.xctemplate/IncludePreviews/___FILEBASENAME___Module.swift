@@ -1,16 +1,16 @@
 //
-//  HomeModule.swift
-//  IgniteExample
+//  ___FILENAME___
+//  ___TARGETNAME___
 //
-//  Created by Grzegorz Sagadyn on 20/09/2020.
-//  Copyright © 2020 IgniteExample. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  ___COPYRIGHT___
 //
 
 import UIKit
 import SwiftUI
 import Ignite
 
-internal class HomeModule: ModuleLayer<HomeView> {
+internal final class ___VARIABLE_productName___Module: ModuleLayer<___VARIABLE_productName___View<___VARIABLE_productName___ViewModel>> {
     internal override func assemble() -> UIViewController {
         let navigator = ViewLayer.ViewModelLayer.NavigatorLayer()
         let viewModel = ViewLayer.ViewModelLayer(navigator: navigator)

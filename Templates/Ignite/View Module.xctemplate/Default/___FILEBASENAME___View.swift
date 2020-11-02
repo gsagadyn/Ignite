@@ -9,10 +9,10 @@
 import SwiftUI
 import Ignite
 
-internal struct ___VARIABLE_productName___View<ViewModel: ___VARIABLE_productName___ViewModelType>: View, ViewLayerType {
+internal struct ___VARIABLE_productName___View: View, ViewLayerType {
     // MARK: - Internal Properties
 
-    @ObservedObject internal var viewModel: ViewModel
+    @ObservedObject internal var viewModel: ___VARIABLE_productName___ViewModel
 
     // MARK: - Body Definition
 

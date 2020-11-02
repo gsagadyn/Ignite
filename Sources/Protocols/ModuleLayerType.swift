@@ -9,8 +9,6 @@ import Foundation
 
 public protocol ModuleLayerType: AnyObject, IgniteType {
     associatedtype ViewLayer: ViewLayerType
-    associatedtype ViewModelLayer: ViewModelLayerType
-    associatedtype NavigatorLayer: NavigatorLayerType
 
-    func assemble() -> NavigatorLayer.Controller
+    func assemble() -> ViewLayer.ViewModelLayer.NavigatorLayer.Controller
 }
