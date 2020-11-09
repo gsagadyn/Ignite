@@ -11,5 +11,5 @@ import SwiftUI
 import Ignite
 
 internal final class ___VARIABLE_productName___NavigatorPreview: NavigatorLayer {
-    // Add ___VARIABLE_productName___Navigator implementation here.
+    // Add ___VARIABLE_productName___NavigatorPreview implementation here.
 }
