@@ -6,7 +6,7 @@
 //  ___COPYRIGHT___
 //
 
-import SwiftUI
+import Foundation
 import Ignite
 
 internal final class ___VARIABLE_productName___ViewModelPreview: ViewModelLayer<___VARIABLE_productName___NavigatorPreview>, ___VARIABLE_productName___ViewModelType {

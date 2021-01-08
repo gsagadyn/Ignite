@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Ignite'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'The lightweight architecture of mobile applications'
   s.homepage         = 'https://github.com/gsagadyn/Ignite'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

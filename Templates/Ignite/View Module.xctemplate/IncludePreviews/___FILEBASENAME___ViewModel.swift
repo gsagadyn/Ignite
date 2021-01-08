@@ -6,7 +6,7 @@
 //  ___COPYRIGHT___
 //
 
-import SwiftUI
+import Foundation
 import Ignite
 
 internal protocol ___VARIABLE_productName___ViewModelType: ViewModelLayerType, ObservableObject {
