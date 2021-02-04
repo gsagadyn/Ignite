@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Ignite",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v11)
     ],
     products: [
         .library(name: "Ignite", targets: ["Ignite"])

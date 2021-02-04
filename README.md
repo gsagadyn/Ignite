@@ -14,7 +14,7 @@ To run the example project, clone the repo, and run `xcodegen` from the Example 
 
 ### Requirements
 
-- iOS 13.0+
+- iOS 11.0+
 - Xcode 12
 - Swift 5.3
 
