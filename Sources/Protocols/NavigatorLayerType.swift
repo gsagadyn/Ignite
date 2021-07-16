@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol NavigatorLayerType: class, IgniteType {
+public protocol NavigatorLayerType: AnyObject, IgniteType {
     associatedtype Controller
     
     var controller: Controller! { get set }
